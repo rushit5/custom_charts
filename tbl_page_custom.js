@@ -54,12 +54,12 @@ google.charts.setOnLoadCallback(drawTable);
 
            function drawTable() {
 									var data = new google.visualization.DataTable();
-									data.addColumn('string', 'Claim Amount');
+									data.addColumn('number', 'Claim Amount');
 									data.addColumn('string', 'Clm ID');
-									data.addColumn('string', 'Insurance ID');
-									data.addColumn('number', 'Mbr Firstname');
+									data.addColumn('number', 'Insurance ID');
+									data.addColumn('string', 'Mbr Firstname');
 									data.addColumn('number', 'Mbr ID');
-									data.addColumn('number', 'Mbr Lastname %');
+									data.addColumn('string', 'Mbr Lastname %');
 									data.addRows(plot_data);									
 									var table = new google.visualization.Table(document.getElementById('container'));
 									table.draw(data, {showRowNumber: false,page:'enable',width: '100%', height: '100%',pageSize:5,pagingButtons:5 ,frozenColumns:3,alternatingRowStyle:false});
