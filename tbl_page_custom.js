@@ -1,5 +1,5 @@
 looker.plugins.visualizations.add({
-⚠create: function(element, config) {
+ create: function(element, config) {
   //element.innerHTML = `
 //	<style>
 //	.sannith {
